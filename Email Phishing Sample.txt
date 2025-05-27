@@ -1,0 +1,26 @@
+Subject: 🚨 Your Account Has Been Locked - Immediate Action Required!
+
+From: Microsoft Account Team support@microsoft-security.com
+
+To: you@example.com
+
+Dear Customer,
+
+We detected suspicious activity in your Microsoft account and, as a precaution, have temporarily locked your account.
+
+What happened?
+
+Someone tried to sign in from an unrecognized location
+
+Potential unauthorized access attempt
+
+To unlock your account and verify your identity, please click the link below:
+
+👉 Verify Your Account
+
+Important: If you do not verify your account within 24 hours, it will be permanently locked for your protection.
+
+Thank you,
+Microsoft Account Security Team
+support@microsoft-security.com
+

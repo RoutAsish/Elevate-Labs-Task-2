@@ -1,0 +1,15 @@
+Return-Path: <support@microsoft-security.com>
+Received: from mail.fakehost123.ru (mail.fakehost123.ru. [203.0.113.45])
+        by mx.google.com with ESMTPS id d123si4567890qka.213.2023.12.10.09.01.23
+        for <you@example.com>;
+        Tue, 10 Dec 2023 09:01:23 -0800 (PST)
+Received-SPF: fail (google.com: domain of support@microsoft-security.com does not designate 203.0.113.45 as permitted sender) client-ip=203.0.113.45;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of support@microsoft-security.com does not designate this IP) smtp.mailfrom=support@microsoft-security.com;
+       dkim=none header.i=@microsoft-security.com;
+       dmarc=fail (p=REJECT) header.from=microsoft-security.com
+From: Microsoft Account Team <support@microsoft-security.com>
+To: you@example.com
+Subject: Your Account Has Been Locked
+Date: Tue, 10 Dec 2023 09:01:20 -0800
+Message-ID: <fake1234567890@mail.fakehost123.ru>

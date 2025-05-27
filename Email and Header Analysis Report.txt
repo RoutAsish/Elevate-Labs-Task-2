@@ -1,0 +1,36 @@
+Analysis & Red Flags|
+
+⚠️ Key Phishing Red Flags:
+
+1. Fake sender email domain (not from @microsoft.com)
+
+2. Urgency and fear (account locked, 24-hour deadline)
+
+3. Generic greeting ("Dear Customer" instead of your name)
+
+4. Suspicious link (hovering reveals a non-Microsoft domain)
+
+
+
+ **Header Field**                      | **Red Flags / Observations**                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Return-Path**                       | `support@microsoft-security.com` – not a legitimate Microsoft domain.                      |
+| **Received from**                     | IP `203.0.113.45` is from `mail.fakehost123.ru` – a suspicious foreign mail server.        |
+| **SPF (Sender Policy Framework)**     | **FAIL** – The sending server is not authorized to send mail on behalf of the domain.      |
+| **DKIM (DomainKeys Identified Mail)** | **None** – No digital signature to verify the sender is who they claim to be.              |
+| **DMARC**                             | **FAIL** – Domain owner has a policy to reject spoofed mail, and this message violates it. |
+| **From**                              | `support@microsoft-security.com` – fake domain designed to mimic Microsoft.                |
+| **Message-ID**                        | Looks auto-generated from an unrelated server (`mail.fakehost123.ru`).                     |
+
+
+ 
+
+✅ Legitimate Email Headers Will Typically:
+
+Be sent from an authorized server (pass SPF, DKIM, and DMARC checks)
+
+Use real domain names (e.g., @microsoft.com)
+
+Be traceable to known IP ranges (owned by Microsoft or trusted services)
+
+Include valid digital signatures
